@@ -1,0 +1,469 @@
+{
+  "exercises": [
+    {
+      "id": "barbell_squat",
+      "name": "Barbell Back Squat",
+      "muscleGroup": "legs",
+      "secondaryMuscles": ["core"],
+      "movementPattern": "squat",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["goblet_squat", "dumbbell_squat"]
+    },
+    {
+      "id": "goblet_squat",
+      "name": "Goblet Squat",
+      "muscleGroup": "legs",
+      "secondaryMuscles": ["core"],
+      "movementPattern": "squat",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["bodyweight_squat"]
+    },
+    {
+      "id": "dumbbell_squat",
+      "name": "Dumbbell Squat",
+      "muscleGroup": "legs",
+      "movementPattern": "squat",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["bodyweight_squat"]
+    },
+    {
+      "id": "bodyweight_squat",
+      "name": "Bodyweight Squat",
+      "muscleGroup": "legs",
+      "movementPattern": "squat",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "leg_press",
+      "name": "Leg Press",
+      "muscleGroup": "legs",
+      "movementPattern": "squat",
+      "equipmentRequired": ["machine"],
+      "isCompound": true,
+      "substitutes": ["goblet_squat"]
+    },
+    {
+      "id": "barbell_deadlift",
+      "name": "Barbell Deadlift",
+      "muscleGroup": "legs",
+      "secondaryMuscles": ["back", "core"],
+      "movementPattern": "hinge",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_rdl"]
+    },
+    {
+      "id": "romanian_deadlift",
+      "name": "Romanian Deadlift",
+      "muscleGroup": "legs",
+      "secondaryMuscles": ["back"],
+      "movementPattern": "hinge",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_rdl"]
+    },
+    {
+      "id": "dumbbell_rdl",
+      "name": "Dumbbell Romanian Deadlift",
+      "muscleGroup": "legs",
+      "secondaryMuscles": ["back"],
+      "movementPattern": "hinge",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true
+    },
+    {
+      "id": "hip_thrust",
+      "name": "Barbell Hip Thrust",
+      "muscleGroup": "legs",
+      "movementPattern": "hinge",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["glute_bridge"]
+    },
+    {
+      "id": "glute_bridge",
+      "name": "Glute Bridge",
+      "muscleGroup": "legs",
+      "movementPattern": "hinge",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "lunges",
+      "name": "Walking Lunges",
+      "muscleGroup": "legs",
+      "movementPattern": "squat",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "dumbbell_lunges",
+      "name": "Dumbbell Lunges",
+      "muscleGroup": "legs",
+      "movementPattern": "squat",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["lunges"]
+    },
+    {
+      "id": "leg_curl",
+      "name": "Lying Leg Curl",
+      "muscleGroup": "legs",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["machine"],
+      "isCompound": false,
+      "substitutes": ["nordic_curl"]
+    },
+    {
+      "id": "leg_extension",
+      "name": "Leg Extension",
+      "muscleGroup": "legs",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["machine"],
+      "isCompound": false,
+      "substitutes": ["sissy_squat"]
+    },
+    {
+      "id": "nordic_curl",
+      "name": "Nordic Curl",
+      "muscleGroup": "legs",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "sissy_squat",
+      "name": "Sissy Squat",
+      "muscleGroup": "legs",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "calf_raise",
+      "name": "Standing Calf Raise",
+      "muscleGroup": "legs",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "bench_press",
+      "name": "Barbell Bench Press",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_bench_press"]
+    },
+    {
+      "id": "dumbbell_bench_press",
+      "name": "Dumbbell Bench Press",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["push_ups"]
+    },
+    {
+      "id": "incline_bench_press",
+      "name": "Incline Barbell Bench Press",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["incline_dumbbell_press"]
+    },
+    {
+      "id": "incline_dumbbell_press",
+      "name": "Incline Dumbbell Press",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["pike_push_ups"]
+    },
+    {
+      "id": "push_ups",
+      "name": "Push-Ups",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "pike_push_ups",
+      "name": "Pike Push-Ups",
+      "muscleGroup": "shoulders",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "dips",
+      "name": "Parallel Bar Dips",
+      "muscleGroup": "chest",
+      "secondaryMuscles": ["shoulders", "arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "cable_fly",
+      "name": "Cable Fly",
+      "muscleGroup": "chest",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["cable"],
+      "isCompound": false,
+      "substitutes": ["dumbbell_fly"]
+    },
+    {
+      "id": "dumbbell_fly",
+      "name": "Dumbbell Fly",
+      "muscleGroup": "chest",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false
+    },
+    {
+      "id": "overhead_press",
+      "name": "Barbell Overhead Press",
+      "muscleGroup": "shoulders",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_shoulder_press"]
+    },
+    {
+      "id": "dumbbell_shoulder_press",
+      "name": "Dumbbell Shoulder Press",
+      "muscleGroup": "shoulders",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "push",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true,
+      "substitutes": ["pike_push_ups"]
+    },
+    {
+      "id": "lateral_raise",
+      "name": "Dumbbell Lateral Raise",
+      "muscleGroup": "shoulders",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false
+    },
+    {
+      "id": "rear_delt_fly",
+      "name": "Rear Delt Fly",
+      "muscleGroup": "shoulders",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false
+    },
+    {
+      "id": "face_pull",
+      "name": "Face Pull",
+      "muscleGroup": "shoulders",
+      "secondaryMuscles": ["back"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["cable"],
+      "isCompound": false,
+      "substitutes": ["rear_delt_fly"]
+    },
+    {
+      "id": "barbell_row",
+      "name": "Barbell Bent-Over Row",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["barbell"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_row"]
+    },
+    {
+      "id": "dumbbell_row",
+      "name": "Dumbbell Row",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true
+    },
+    {
+      "id": "cable_row",
+      "name": "Seated Cable Row",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["cable"],
+      "isCompound": true,
+      "substitutes": ["dumbbell_row"]
+    },
+    {
+      "id": "lat_pulldown",
+      "name": "Lat Pulldown",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["cable"],
+      "isCompound": true,
+      "substitutes": ["pull_ups"]
+    },
+    {
+      "id": "pull_ups",
+      "name": "Pull-Ups",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "chin_ups",
+      "name": "Chin-Ups",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "inverted_row",
+      "name": "Inverted Row",
+      "muscleGroup": "back",
+      "secondaryMuscles": ["arms"],
+      "movementPattern": "pull",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": true
+    },
+    {
+      "id": "barbell_curl",
+      "name": "Barbell Curl",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["barbell"],
+      "isCompound": false,
+      "substitutes": ["dumbbell_curl"]
+    },
+    {
+      "id": "dumbbell_curl",
+      "name": "Dumbbell Curl",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false
+    },
+    {
+      "id": "hammer_curl",
+      "name": "Hammer Curl",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false
+    },
+    {
+      "id": "tricep_pushdown",
+      "name": "Tricep Pushdown",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["cable"],
+      "isCompound": false,
+      "substitutes": ["tricep_dips"]
+    },
+    {
+      "id": "skull_crusher",
+      "name": "Skull Crusher",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["barbell"],
+      "isCompound": false,
+      "substitutes": ["overhead_tricep_extension"]
+    },
+    {
+      "id": "overhead_tricep_extension",
+      "name": "Overhead Tricep Extension",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": false,
+      "substitutes": ["tricep_dips"]
+    },
+    {
+      "id": "tricep_dips",
+      "name": "Tricep Dips",
+      "muscleGroup": "arms",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "plank",
+      "name": "Plank",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "dead_bug",
+      "name": "Dead Bug",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "hanging_leg_raise",
+      "name": "Hanging Leg Raise",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "cable_crunch",
+      "name": "Cable Crunch",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["cable"],
+      "isCompound": false,
+      "substitutes": ["crunch"]
+    },
+    {
+      "id": "crunch",
+      "name": "Crunch",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "russian_twist",
+      "name": "Russian Twist",
+      "muscleGroup": "core",
+      "movementPattern": "isolation",
+      "equipmentRequired": ["bodyweight"],
+      "isCompound": false
+    },
+    {
+      "id": "farmer_walk",
+      "name": "Farmer's Walk",
+      "muscleGroup": "core",
+      "secondaryMuscles": ["arms", "legs"],
+      "movementPattern": "carry",
+      "equipmentRequired": ["dumbbells"],
+      "isCompound": true
+    }
+  ]
+}
