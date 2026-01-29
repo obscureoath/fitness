@@ -33,7 +33,7 @@ export function NumberInput({
                         const val = e.target.value;
                         onChange(val ? parseFloat(val) : undefined);
                     }}
-                    className={`w-full px-4 py-3 rounded-xl border-2 transition-colors focus:outline-none focus:ring-0 ${error
+                    className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-900 placeholder:text-gray-400 shadow-sm transition-all focus:outline-none focus:ring-0 focus:shadow-emerald-100/60 ${error
                             ? 'border-red-300 focus:border-red-500'
                             : 'border-gray-200 focus:border-emerald-500'
                         } ${unit ? 'pr-14' : ''}`}
