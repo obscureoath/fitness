@@ -78,6 +78,7 @@ export function generatePDFDirect(plan: GeneratedPlan): jsPDF {
     let y = margin;
 
     const colors: Record<string, PdfColor> = {
+    const colors = {
         primary: [16, 185, 129],
         primaryDark: [13, 148, 136],
         slate: [15, 23, 42],
@@ -95,6 +96,7 @@ export function generatePDFDirect(plan: GeneratedPlan): jsPDF {
     };
 
     const addText = (text: string, indent: number = 0, size: number = 10, color: PdfColor = colors.slate) => {
+    const addText = (text: string, indent: number = 0, size: number = 10, color: number[] = colors.slate) => {
         pdf.setFontSize(size);
         pdf.setFont('helvetica', 'normal');
         pdf.setTextColor(...color);
@@ -102,6 +104,41 @@ export function generatePDFDirect(plan: GeneratedPlan): jsPDF {
         pdf.text(lines, margin + indent, y);
         y += lines.length * 5;
         pdf.setTextColor(...colors.slate);
+    };
+
+    const addSectionHeader = (text: string) => {
+        checkPageBreak(20);
+        pdf.setFillColor(...colors.primary);
+        pdf.roundedRect(margin, y, contentWidth, 10, 2, 2, 'F');
+        pdf.setFontSize(12);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setTextColor(255, 255, 255);
+        pdf.text(text, margin + 4, y + 7);
+        pdf.setTextColor(...colors.slate);
+        y += 14;
+    };
+
+    const addCard = (title: string, rows: Array<[string, string]>) => {
+        const cardHeight = 8 + rows.length * 6 + 6;
+        checkPageBreak(cardHeight + 4);
+        pdf.setFillColor(...colors.card);
+        pdf.setDrawColor(...colors.border);
+        pdf.roundedRect(margin, y, contentWidth, cardHeight, 2, 2, 'FD');
+        pdf.setFont('helvetica', 'bold');
+        pdf.setFontSize(11);
+        pdf.text(title, margin + 4, y + 7);
+        pdf.setFont('helvetica', 'normal');
+        pdf.setFontSize(10);
+        rows.forEach(([label, value], index) => {
+            const rowY = y + 13 + index * 6;
+            pdf.setTextColor(...colors.muted);
+            pdf.text(label, margin + 4, rowY);
+            pdf.setTextColor(...colors.slate);
+            pdf.text(value, margin + 55, rowY);
+        });
+        y += cardHeight + 6;
+    };
+
     };
 
     const addSectionHeader = (text: string) => {
