@@ -8,6 +8,7 @@ import { useLocalStorage } from '@/hooks/useLocalStorage';
 import { downloadPDFDirect } from '@/utils/pdfExport';
 import { NutritionDisplay } from '@/components/results/NutritionDisplay';
 import { WorkoutDisplay } from '@/components/results/WorkoutDisplay';
+import { BmiSummary } from '@/components/results/BmiSummary';
 
 export default function ResultsPage() {
     const router = useRouter();
@@ -145,6 +146,11 @@ export default function ResultsPage() {
                         </div>
                     </div>
                 </div>
+
+                <BmiSummary
+                    heightCm={plan.surveyData.basicInfo.height}
+                    weightKg={plan.surveyData.basicInfo.weight}
+                />
 
                 {/* Tab Navigation */}
                 <div className="flex gap-2 mb-6 no-print">

@@ -27,7 +27,7 @@ export function TextArea({
                 value={value ?? ''}
                 onChange={(e) => onChange(e.target.value)}
                 rows={3}
-                className={`w-full px-4 py-3 rounded-xl border-2 transition-colors focus:outline-none focus:ring-0 resize-none ${error
+                className={`w-full px-4 py-3 rounded-xl border-2 bg-white text-gray-900 placeholder:text-gray-400 shadow-sm transition-all focus:outline-none focus:ring-0 focus:shadow-emerald-100/60 resize-none ${error
                         ? 'border-red-300 focus:border-red-500'
                         : 'border-gray-200 focus:border-emerald-500'
                     }`}
